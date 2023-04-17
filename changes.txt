@@ -1,0 +1,7 @@
+[4/16/23]
+`nvm use 18`
+
+I had issues with bleno hci but came across this link
+https://github.com/noble/bleno/issues/440#issuecomment-598106148
+
+Since issue was dependency related I decided to remove package-lock and build fresh dependency tree
