@@ -1,15 +1,15 @@
-let util = require('util'),
-	bleno = require('bleno');
+const util = require('util')
+const bleno = require('bleno')
 
-function RSCMeasurementCharacteristic() {
-	RSCMeasurementCharacteristic.super_.call(this, {
-		uuid: '2A53',
-		properties: ['notify'],
-		value: null,
-		descriptors: []
-	});
+function RSCMeasurementCharacteristic () {
+  RSCMeasurementCharacteristic.super_.call(this, {
+    uuid: '2A53',
+    properties: ['notify'],
+    value: null,
+    descriptors: []
+  })
 }
 
-util.inherits(RSCMeasurementCharacteristic, bleno.Characteristic);
+util.inherits(RSCMeasurementCharacteristic, bleno.Characteristic)
 
-module.exports = RSCMeasurementCharacteristic;
+module.exports = RSCMeasurementCharacteristic

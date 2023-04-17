@@ -1,16 +1,17 @@
 {
     "env": {
-        "es6": true,
+        "commonjs": true,
+        "es2021": true,
         "node": true
     },
-    "parserOptions": { "ecmaVersion": 2018 },
-    "extends": "eslint:recommended",
+    "extends": "standard",
     "overrides": [
-        {
-          "files": ["src/*.js", "app.js"],
-          "rules": {
-            "quotes": ["error", "single"]
-          }
-        }
-      ]
+    ],
+    "parserOptions": {
+        "ecmaVersion": "latest"
+    },
+    "rules": {
+        "no-tabs": 0,
+        "no-return-assign": 0
+    }
 }
