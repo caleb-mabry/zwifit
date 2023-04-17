@@ -10,9 +10,9 @@ let express = require('express'),
 exports.start = () => {
 	app.use(express.static(path.join(__dirname, 'web-dist')));
 
-	let bluetooth = require('../bluetooth'),
-		ifit = require('../ifit'),
-		current = { bluetooth: bluetooth.current, ifit: ifit.current };
+	const bluetooth = require('../bluetooth');
+	const ifit = require('../ifit');
+	const current = { bluetooth: bluetooth.current, ifit: ifit.current };
 
 	io.on('connection', socket => {
 		socket.on('message', str => {
